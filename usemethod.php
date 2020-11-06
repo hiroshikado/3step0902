@@ -19,6 +19,7 @@ require_once ("pencil.php");
 		<?php
 		// オブジェクト用の配列を作る
 		// ここに追加
+		$ary = new ArrayObject ();
 		
 		// オブジェクトを作る
 		$item1 = new Pencil ( "バッタ", "H", 100 );
@@ -27,7 +28,10 @@ require_once ("pencil.php");
 		
 		// 配列に要素を追加する
 		// ここに追加
-		
+		$ary->append ( $item1 );
+		$ary->append ( $item2 );
+		$ary->append ( $item3 );
+
 		// データ個数の表示
 		echo "データ個数：" . $ary->count () . "<br>";
 		
